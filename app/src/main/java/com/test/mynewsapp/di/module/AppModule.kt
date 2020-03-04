@@ -27,11 +27,6 @@ class AppModule {
     fun provideHeadLinesRemoteDataSource(legoService: NewsService)
             = HeadLinesRemoteDataSource(legoService)
 
-//    @Singleton
-//    @Provides
-//    fun provideLegoThemeRemoteDataSource(legoService: NewsService)
-//            = HeadLinesRemoteDataSource(legoService)
-
     @NewsAPI
     @Provides
     fun providePrivateOkHttpClient(

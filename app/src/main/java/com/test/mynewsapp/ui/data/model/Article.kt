@@ -22,7 +22,7 @@ data class Article(
     val url: String?,
     @SerializedName("urlToImage")
     val urlToImage: String?
-): Parcelable {
+) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
@@ -51,5 +51,9 @@ data class Article(
         override fun newArray(size: Int): Array<Article?> {
             return arrayOfNulls(size)
         }
+    }
+
+    fun getDuration(): String {
+        TODO("Calculate duration using publishedAt and currentDateTime and show it on View")
     }
 }

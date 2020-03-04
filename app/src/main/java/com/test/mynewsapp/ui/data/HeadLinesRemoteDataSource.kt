@@ -10,6 +10,7 @@ import javax.inject.Inject
  */
 class HeadLinesRemoteDataSource @Inject constructor(private val service: NewsService) : BaseDataSource() {
 
-    suspend fun fetchData() = getResult { service.getHeadLines(1,21,"us", BuildConfig.NEWS_API_KEY) }
+    suspend fun fetchData(page: Int, pageSize: Int? = null)
+            = getResult { service.getHeadLines(page,pageSize,"en", BuildConfig.NEWS_API_KEY) }
 
 }

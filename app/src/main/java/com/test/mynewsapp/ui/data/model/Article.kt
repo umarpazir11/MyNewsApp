@@ -1,14 +1,10 @@
-package com.test.mynewsapp.ui.data
+package com.test.mynewsapp.ui.data.model
 
 
 import android.os.Build
 import androidx.annotation.RequiresApi
 import com.google.gson.annotations.SerializedName
-import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.Period
-import java.time.temporal.ChronoUnit
-import java.util.*
+import com.test.mynewsapp.ui.data.model.Source
 
 data class Article(
     @SerializedName("author")

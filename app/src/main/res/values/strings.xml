@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My News App</string>
+
+
+    <!-- Accessibility -->
+    <string name="news_banner_image">Picture of News Item</string>
+    <string name="_duration_label">3 hrs ago</string>
+    <string name="_source_label">From: Abc</string>
+    <string name="_content_label">Content</string>
+    <string name="_title_label">Title</string>
+</resources>

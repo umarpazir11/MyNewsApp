@@ -1,0 +1,266 @@
+{
+  "status": "ok",
+  "totalResults": 38,
+  "articles": [
+    {
+      "source": {
+        "id": "fox-news",
+        "name": "Fox News"
+      },
+      "author": "Brie Stimson",
+      "title": "US military says it conducted airstrike against Taliban forces, first since peace deal - Fox News",
+      "description": "The U.S. military said early Wednesday it had conducted an airstrike against Taliban forces in Afghanistan, the first such attack since a historic peace deal was signed with the militant group Saturday.",
+      "url": "https://www.foxnews.com/world/in-first-attack-since-peace-deal-us-military-says-it-conducted-airstrike-against-taliban-forces",
+      "urlToImage": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/f082ae45-9e76-4609-b3d4-0b968823a881/c8af861d-5231-42f4-9e14-c7963f4c78f0/1280x720/match/image.jpg",
+      "publishedAt": "2020-03-04T09:19:05Z",
+      "content": "The U.S. military said early Wednesday it had conducted an airstrike against Taliban forces in Afghanistan"
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Madeline Holcombe and Brandon Miller, CNN",
+      "title": "Tennessee is under a state of emergency after the deadliest tornado day in 7 years - CNN",
+      "description": "Tennessee is under a state of emergency after the deadliest tornado day in seven years.",
+      "url": "https://www.cnn.com/2020/03/04/weather/tennessee-tornado-wednesday/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/200303223507-01-tennessee-department-of-corrections-super-tease.jpg",
+      "publishedAt": "2020-03-04T06:59:00Z",
+      "content": "(CNN)Tennessee is under a state of emergency after the deadliest tornado day in seven years. \r\nPutnam County officials went door to door Tuesday searching 150 standing structures. They planned to continue through the night into Wednesday morning, aiming to fi… [+4701 chars]"
+    },
+    {
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Sam Byford",
+      "title": "Samsung now makes ultra-curved monitors for offices as well as gamers - The Verge",
+      "description": "Samsung has announced the T55 monitor range, including three models with 1000R curvature. The monitors are designed to look a little more subtle than the similarly curved Odyssey gaming models.",
+      "url": "https://www.theverge.com/2020/3/4/21164278/samsung-t55-1000r-ultra-curved-monitor-specs",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/e5mmzNwFGTkf2xgFm3rAOrtyqcI=/0x72:1000x596/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19766504/1580435340382_b_t55_010_Dynamic_Black.jpg",
+      "publishedAt": "2020-03-04T06:26:22Z",
+      "content": "These new 1000R models will look a little more subtle on your desk\r\nSamsungs big monitor push at CES this year was all about curvature. The 1000R measurement of its Odyssey G9 and G7 gaming monitors is intended to more accurately match the human eyes field of… [+1438 chars]"
+    },
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Tom Westbrook",
+      "title": "GLOBAL MARKETS-Asian shares struggle despite Fed cut; resurgent Biden boosts U.S. futures - Reuters UK",
+      "description": "Asian shares struggled to find their footing on Wednesday and bonds held stunning gains, as an emergency rate cut from the U.S. Federal Reserve seemed to stoke rather than soothe fears over the coronavirus' widening global economic fallout.",
+      "url": "https://uk.reuters.com/article/global-markets-idUKL4N2AX1L3",
+      "urlToImage": "https://s4.reutersmedia.net/resources_v2/images/rcom-default.png",
+      "publishedAt": "2020-03-04T06:13:00Z",
+      "content": "* U.S. Treasury yields loiter near record lows \r\n* Dollar slides vs Asian currencies \r\n* S&amp;P 500 futures rise as Biden resurgent in primaries \r\n* Asian stock markets: tmsnrt.rs/2zpUAr4\r\nBy Tom Westbrook and Scott Murdoch \r\nSINGAPORE/HONG KONG, March 4 (Re… [+4354 chars]"
+    },
+    {
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "author": null,
+      "title": "Placer County reports 2nd coronavirus case. ‘Critically ill’ patient was on cruise ship - Sacramento Bee",
+      "description": null,
+      "url": "https://news.google.com/__i/rss/rd/articles/CBMiN2h0dHBzOi8vd3d3LnNhY2JlZS5jb20vbmV3cy9sb2NhbC9hcnRpY2xlMjQwODcxMjI2Lmh0bWzSATdodHRwczovL2FtcC5zYWNiZWUuY29tL25ld3MvbG9jYWwvYXJ0aWNsZTI0MDg3MTIyNi5odG1s?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2020-03-04T05:53:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Seattletimes.com"
+      },
+      "author": "Nina Shapiro",
+      "title": "Outings canceled, visitors screened: Seattle-area nursing homes scramble to keep vulnerable residents safe - Seattle Times",
+      "description": "Even while senior communities are now taking urgent precautions, The Seattle Times has learned that one 85-year-old woman was moved to another facility before it was known she was infected with novel coronavirus.",
+      "url": "https://www.seattletimes.com/seattle-news/outings-canceled-visitors-screened-seattle-area-nursing-homes-scramble-to-keep-vulnerable-residents-safe/",
+      "urlToImage": "https://static.seattletimes.com/wp-content/uploads/2020/03/03032020_seniorcommunity_170404-1200x630.jpg",
+      "publishedAt": "2020-03-04T05:00:00Z",
+      "content": "On Monday, a fitness instructor came to a senior community along the southern tip of Lake Washington called The Lakeshore. Before she could meet residents, she was asked a series of questions that have become standard at that facility, and others like it, in … [+7357 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Youtube.com"
+      },
+      "author": null,
+      "title": "What Joe Biden's Massachusetts win means for Elizabeth Warren | ABC NEWS - ABC News",
+      "description": "Sen. Elizabeth Warren is projected to come in third in her home state. FULL SUPER TUESDAY RESULTS COVERAGE HERE: https://abcnews.go.com/Elections #ABCNews #S...",
+      "url": "https://www.youtube.com/watch?v=rtQMsxW09Nc",
+      "urlToImage": "https://i.ytimg.com/vi/rtQMsxW09Nc/maxresdefault.jpg",
+      "publishedAt": "2020-03-04T04:49:59Z",
+      "content": "[[getSimpleString(data.title)]]\r\n[[getSimpleString(data.description)]]\r\n[[getSimpleString(data.videoCountText)]]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Youtube.com"
+      },
+      "author": null,
+      "title": "Mars Rover 2020's Name Will Be Revealed - NASA",
+      "description": "NASA's newest Mars Rover's name - and student behind it - will be announced LIVE on Thursday, March 5 at 1:30 p.m. EST. The Mars 2020 rover was the subject o...",
+      "url": "https://www.youtube.com/watch?v=qhbF70hzzcw",
+      "urlToImage": "https://i.ytimg.com/vi/qhbF70hzzcw/hqdefault.jpg",
+      "publishedAt": "2020-03-04T04:33:07Z",
+      "content": "[[getSimpleString(data.title)]]\r\n[[getSimpleString(data.description)]]\r\n[[getSimpleString(data.videoCountText)]]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo.com"
+      },
+      "author": "Eric Edholm",
+      "title": "Post-combine NFL mock draft: QB Jordan Love lands up high in surprising spot - Yahoo Sports",
+      "description": "The NFL scouting combine brought some changes to our latest mock draft.",
+      "url": "https://sports.yahoo.com/postcombine-nfl-mock-draft-qb-jordan-love-lands-up-high-in-surprising-spot-042442864.html",
+      "urlToImage": "https://s.yimg.com/uu/api/res/1.2/0yyvOeHsv0KLh9zV9lo.kg--~B/aD0zMjY0O3c9NDg5NjtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-images/2020-03/476646c0-5dcf-11ea-abff-62cb0315ccaf",
+      "publishedAt": "2020-03-04T04:24:00Z",
+      "content": "Every year, we need to remind ourselves: The NFL scouting combine matters.No matter how foolish the TV track event which feels more popular than actual track and field might seem from a distance, on the ground in Indianapolis is the draft current. You can fee… [+20350 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Deadline.com"
+      },
+      "author": "Anita Bennett, Anita Bennett",
+      "title": "Amazon Employee In Seattle Tests Positive For Coronavirus - Deadline",
+      "description": "A worker at an Amazon office in Seattle has tested positive for the coronavirus, Deadline confirmed Tuesday evening. The employee does not work at the company’s headquarters, but at Amazon’s …",
+      "url": "https://deadline.com/2020/03/amazon-employee-in-seattle-tests-positive-for-coronavirus-1202873852/",
+      "urlToImage": "https://pmcdeadline2.files.wordpress.com/2020/01/amazon-logo.jpg?w=1024",
+      "publishedAt": "2020-03-04T04:15:00Z",
+      "content": "A worker at an Amazon office in Seattle has tested positive for the coronavirus, Deadline confirmed Tuesday evening.\r\nThe employee does not work at the company’s headquarters, but at Amazon’s Brazil office building in Seattle, CNBC reported.\r\n“The employee we… [+360 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Nintendolife.com"
+      },
+      "author": "Nintendo Life",
+      "title": "Here Are The Full Patch Notes For Luigi's Mansion 3 Version 1.3.0 - Nintendo Life",
+      "description": "New features, fixes and more",
+      "url": "http://www.nintendolife.com/news/2020/03/here_are_the_full_patch_notes_for_luigis_mansion_3_version_1_3_0",
+      "urlToImage": "http://images.nintendolife.com/a36eec73a2476/1280x720.jpg",
+      "publishedAt": "2020-03-04T02:45:00Z",
+      "content": "@ShadJV : Tell me about it. I've bought all of the physically-available (in English) Atelier games on Switch (never dabbled in the franchise prior). The only one I've played to any length was Nelke, which was a spin-off/anniversary game that doesn't play like… [+527 chars]"
+    },
+    {
+      "source": {
+        "id": "usa-today",
+        "name": "USA Today"
+      },
+      "author": "Jessica Guynn, Kelly Tyko",
+      "title": "Gouge much? Purell for $149, face masks for $20: Coronavirus price hikes are making everyone mad - USA TODAY",
+      "description": "Sky-high prices anger shoppers searching for supplies such as hand sanitizer and face masks to keep themselves and their families from getting sick.",
+      "url": "https://www.usatoday.com/story/money/2020/03/03/coronavirus-hand-sanitizer-face-masks-price-gouging-amazon-walmart-ebay/4933920002/",
+      "urlToImage": "https://www.gannett-cdn.com/presto/2020/03/02/USAT/4087df4c-5467-4f78-8149-cce58913ecee-Coronavirus_USA_03.JPG?crop=3609,2030,x101,y28&width=3200&height=1680&fit=bounds",
+      "publishedAt": "2020-03-04T01:47:45Z",
+      "content": "The U.S. surgeon general warned people to \"stop buying masks\" to prevent catching the coronavirus.\r\nUSA TODAY\r\nWould you pay $149 for a two-pack of 12-ounce bottles of Purell? How about a single container of Clorox wipes for $44.25, plus $14.59 shipping?\r\nAs … [+7453 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Youtube.com"
+      },
+      "author": null,
+      "title": "Clinton talks 2016 campaign, her advice to 2020 candidates l ABC News - ABC News",
+      "description": "In an ABC News Exclusive, 2016 Democratic nominee Hillary Clinton reflects on the 2016 campaign, and discusses her next chapter as a podcast host. ABC News L...",
+      "url": "https://www.youtube.com/watch?v=ikrXrtuKkUI",
+      "urlToImage": "https://i.ytimg.com/vi/ikrXrtuKkUI/maxresdefault.jpg",
+      "publishedAt": "2020-03-04T01:41:35Z",
+      "content": "[[getSimpleString(data.title)]]\r\n[[getSimpleString(data.description)]]\r\n[[getSimpleString(data.videoCountText)]]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Nypost.com"
+      },
+      "author": "Kevin Kernan",
+      "title": "Aaron Judge's longevity has to be major Yankees worry - New York Post ",
+      "description": "TAMPA — Aaron Judge’s numbers are scary, a career .952 OPS. Here is the really frightening number: 110 games missed over the past two years due to injury. And now, when a player is supposed to be a…",
+      "url": "https://nypost.com/2020/03/03/aaron-judges-longevity-has-to-be-major-yankees-worry/",
+      "urlToImage": "https://thenypost.files.wordpress.com/2020/03/aaron-judge-1.jpg?quality=90&strip=all&w=1200",
+      "publishedAt": "2020-03-04T01:19:00Z",
+      "content": "TAMPA Aaron Judges numbers are scary, a career .952 OPS.\r\nHere is the really frightening number: 110 games missed over the past two years due to injury.\r\nAnd now, when a player is supposed to be at his healthiest, in spring training, Judge cant get on the fie… [+3580 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Cbssports.com"
+      },
+      "author": "Jonathan Jones",
+      "title": "Jaguars keep paying for bad decisions at quarterback, but A.J. Bouye trade puts three things into focus - CBS Sports",
+      "description": "Who will the Jaguars draft at No. 9? What will happen with Nick Foles? The Jaguars have a tough offseason ahead",
+      "url": "https://www.cbssports.com/nfl/news/jaguars-keep-paying-for-bad-decisions-at-quarterback-but-a-j-bouye-trade-puts-three-things-into-focus/",
+      "urlToImage": "https://sportshub.cbsistatic.com/i/r/2018/02/25/8a5394d0-25b4-41d7-acb7-4539023d4112/thumbnail/1200x675/b409cff0f005c4468aedf71ef7157fe2/bortles.jpg",
+      "publishedAt": "2020-03-04T00:32:00Z",
+      "content": "Just more than two years separated from one of the most aberrational runs in recent NFL history, the Jacksonville Jaguars are nearly unrecognizable. And the wounds have mostly been self-inflicted.\r\nThe 2017 Jaguars that were within a play of Super Bowl LII ar… [+4542 chars]"
+    },
+    {
+      "source": {
+        "id": "mashable",
+        "name": "Mashable"
+      },
+      "author": "Jack Morse",
+      "title": "Everyone who has pulled out of SXSW so far - Mashable",
+      "description": "The list is only growing larger by the day.",
+      "url": "https://mashable.com/article/companies-pulled-out-of-sxsw-coronavirus-concerns/",
+      "urlToImage": "https://mondrian.mashable.com/2020%252F03%252F04%252F83%252Ff99bd90df2f646d699a980b67d80eb7c.bf2cb.png%252F1200x630.png?signature=XvZZyCMiiK9hI48Z7jWn-oPCv7w=",
+      "publishedAt": "2020-03-04T00:16:00Z",
+      "content": "So, for now, South by Southwest is still officially happening. \r\nYou'd be forgiven for thinking otherwise as each new day seemingly brings with it news of yet another major company dropping out of the annual tech and music festival in Austin, Texas. At issue … [+3027 chars]"
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Katie Hunt, CNN",
+      "title": "Pesticides damage the brains of baby bees, new research finds - CNN",
+      "description": "Baby bees can feel the effects of the food contaminated by pesticides, making them poorer at performing tasks later in life.",
+      "url": "https://www.cnn.com/2020/03/03/world/baby-bees-brains-pesticides-scn/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/200303064033-01-bee-brains-super-tease.jpg",
+      "publishedAt": "2020-03-04T00:01:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Nytimes.com"
+      },
+      "author": "David E. Sanger, William J. Broad",
+      "title": "Iran Crosses a Key Threshold: It Again Has Sufficient Fuel for a Bomb - The New York Times",
+      "description": "So far, the evidence suggests that Iran’s recent actions are calculated to pressure the Trump administration and Europe rather than rushing for a bomb.",
+      "url": "https://www.nytimes.com/2020/03/03/world/middleeast/iran-nuclear-weapon-trump.html",
+      "urlToImage": "https://static01.nyt.com/images/2020/03/03/us/politics/03dc-nukes/merlin_166332897_8ef733b4-f3ee-49b3-947e-ad30c3d937ba-facebookJumbo.jpg",
+      "publishedAt": "2020-03-03T23:49:00Z",
+      "content": "Intelligence agencies and outside experts do so, and their reading of the report on Tuesday appeared clear: In the aftermath of Mr. Trumps withdrawal from the Obama-era agreement, Iran now has a pathway to a bomb, and it is slowly reconstituting its fuel inve… [+1705 chars]"
+    },
+    {
+      "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+      },
+      "author": "https://www.facebook.com/washpostvisuals",
+      "title": "Exit polls from the Super Tuesday 2020 Democratic primaries - Washington Post",
+      "description": "See the strengths and weaknesses of each Democratic candidate, according to a survey of voters as they exited randomly selected voting sites across 12 states.",
+      "url": "https://www.washingtonpost.com/graphics/politics/exit-polls-2020-super-tuesday-primary/",
+      "urlToImage": "https://www.washingtonpost.com/resizer/xeMe-nc7GGwCNI7s5A86J84ezks=/0x0/filters:focal(0x0:0x0):quality(100)/arc-anglerfish-washpost-prod-washpost/public/KEONUE5RXJBJ3J4AMYT5T5GDG4.jpg",
+      "publishedAt": "2020-03-03T23:44:12Z",
+      "content": "Source\r\n Exit polls are results from a survey of voters as they entered randomly selected voting sites in Alabama, California, Maine, Massachusetts, Minnesota, North Carolina, Oklahoma, Tennessee, Texas, Vermont and Virginia on primary day, March 3. Colorado … [+908 chars]"
+    },
+    {
+      "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+      },
+      "author": "Khristopher J. Brooks",
+      "title": "Coronavirus fears shadow this year's March Madness tournament - CBS News",
+      "description": "College players group wants tourney's games held in empty arenas. Host cities with millions at stake not thrilled about idea.",
+      "url": "https://www.cbsnews.com/news/coronavirus-march-madness-ncaa-empty-basketball-arenas/",
+      "urlToImage": "https://cbsnews1.cbsistatic.com/hub/i/r/2017/03/20/0624c549-205f-4878-9510-dada0cb27d84/thumbnail/1200x630g2/b200ddee3677953251eadd26ef2e42f7/ap-501396684633.jpg",
+      "publishedAt": "2020-03-03T23:30:00Z",
+      "content": "College basketball players in the U.S. want to hold this year's March Madness tournament in empty stadiums due to the coronavirus, a move that would cost cities hosting the annual competition tens of millions in tourism dollars. \r\nThe National College Players… [+5089 chars]"
+    }
+  ]
+}

@@ -22,19 +22,27 @@ ext {
     navigationVersion = '2.2.1'
     recyclerViewVersion = '1.1.0'
     workVersion = '2.1.0'
-    pagingVersion = '2.1.0'
+
+    //Retrofit, Gson, Okhttp
     gsonVersion = '2.8.2'
     okhttp = '3.10.0'
     retrofit = '2.6.0'
+
+    //Dagger
     daggerVersion = '2.23.2'
+
+    //Paging
+    pagingVersion = '2.1.1'
 
     // Testing dependencies
     junitVersion = '4.13'
     espressoVersion = '3.2.0'
     testExtJunit = '1.1.1'
-
-
-
+    coreTestingVersion = '2.0.0'
+    mockwebserverVersion = "3.8.1"
+    mockitoVersion = "2.25.0"
+    mockitoAndroidVersion = "2.25.0"
+    workVersion = '2.1.0'
 }
 
 
@@ -48,7 +56,6 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

@@ -1,10 +1,8 @@
 package com.test.mynewsapp.ui.headlines
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -17,10 +15,14 @@ import com.test.mynewsapp.ui.data.model.Article
 class HeadLinesAdapter :
     PagedListAdapter<Article, HeadLinesAdapter.ViewHolder>(DiffCallback()) {
 
+    companion object {
+        const val NEWS_ARTICLES_SET = 7
+    }
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val newsArticle = getItem(position)
         holder.apply {
-            bind(createOnClickListener(),newsArticle!!)
+            bind(createOnClickListener(), newsArticle!!)
             itemView.tag = newsArticle
         }
     }
@@ -33,11 +35,10 @@ class HeadLinesAdapter :
         return ViewHolder(itemView)
 
     }
+
     private fun createOnClickListener(): View.OnClickListener {
         return View.OnClickListener {
-            Log.i("clicked","DONE")
-//            val direction = LegoThemeFragmentDirections.actionThemeFragmentToSetsFragment(id, name)
-//            it.findNavController().navigate(direction)
+        //TODO("Design UI nad load full article in next Fragment")
         }
     }
 
@@ -45,7 +46,7 @@ class HeadLinesAdapter :
         private val binding: ListItemHeadLinesBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(listener: View.OnClickListener,item: Article) {
+        fun bind(listener: View.OnClickListener, item: Article) {
             binding.apply {
                 clickListener = listener
                 newsArticle = item
@@ -54,8 +55,11 @@ class HeadLinesAdapter :
         }
     }
 
+    /**
+     * This will find out every 1st out of 7 news articles.
+     */
     override fun getItemViewType(position: Int): Int {
-        return position % 7 * 2
+        return position % NEWS_ARTICLES_SET * 2
     }
 }
 

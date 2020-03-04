@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Per Material Design specs: -->
+    <dimen name="margin_normal">24dp</dimen>
+    <dimen name="margin_small">16dp</dimen>
+    <dimen name="small_text">12sp</dimen>
+
+</resources>

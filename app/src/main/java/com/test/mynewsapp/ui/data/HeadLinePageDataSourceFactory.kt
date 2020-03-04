@@ -23,7 +23,6 @@ class HeadLinePageDataSourceFactory @Inject constructor(
         private const val PAGE_SIZE = 21
 
         fun pagedListConfig() = PagedList.Config.Builder()
-                .setInitialLoadSizeHint(PAGE_SIZE)
                 .setPageSize(PAGE_SIZE)
                 .setEnablePlaceholders(true)
                 .build()

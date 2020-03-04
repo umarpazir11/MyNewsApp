@@ -12,7 +12,6 @@ interface NewsService {
 
     companion object {
         const val ENDPOINT = "https://newsapi.org/v2/"
-        const val NEWS_API_KEY = "208d5d598eff49479f979701bf01226a"
     }
 
     @GET("top-headlines")

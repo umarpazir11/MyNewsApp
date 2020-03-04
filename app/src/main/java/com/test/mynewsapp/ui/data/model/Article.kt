@@ -4,7 +4,6 @@ package com.test.mynewsapp.ui.data.model
 import android.os.Build
 import androidx.annotation.RequiresApi
 import com.google.gson.annotations.SerializedName
-import com.test.mynewsapp.ui.data.model.Source
 
 data class Article(
     @SerializedName("author")

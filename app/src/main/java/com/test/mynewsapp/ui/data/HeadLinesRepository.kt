@@ -14,29 +14,16 @@ import javax.inject.Singleton
 @Singleton
 class HeadLinesRepository @Inject constructor(private val legoSetRemoteDataSource: HeadLinesRemoteDataSource) {
 
-    fun observePagedSets(connectivityAvailable: Boolean, coroutineScope: CoroutineScope) = observeRemotePagedSets(coroutineScope)
-
+    fun observePagedSets(coroutineScope: CoroutineScope) = observeRemotePagedSets(coroutineScope)
 
     private fun observeRemotePagedSets(ioCoroutineScope: CoroutineScope)
             : LiveData<PagedList<Article>> {
-        val dataSourceFactory = HeadLinePageDataSourceFactory(legoSetRemoteDataSource, ioCoroutineScope)
+        val dataSourceFactory =
+            HeadLinePageDataSourceFactory(legoSetRemoteDataSource, ioCoroutineScope)
 
-        return LivePagedListBuilder(dataSourceFactory,
-            HeadLinePageDataSourceFactory.pagedListConfig()).build()
-    }
-
-    companion object {
-
-        const val PAGE_SIZE = 21
-
-        // For Singleton instantiation
-        @Volatile
-        private var instance: HeadLinesRepository? = null
-
-        fun getInstance(legoSetRemoteDataSource: HeadLinesRemoteDataSource) =
-                instance ?: synchronized(this) {
-                    instance
-                            ?: HeadLinesRepository(legoSetRemoteDataSource).also { instance = it }
-                }
+        return LivePagedListBuilder(
+            dataSourceFactory,
+            HeadLinePageDataSourceFactory.pagedListConfig()
+        ).build()
     }
 }

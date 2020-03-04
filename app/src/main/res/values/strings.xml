@@ -8,4 +8,5 @@
     <string name="_source_label">From: Abc</string>
     <string name="_content_label">Content</string>
     <string name="_title_label">Title</string>
+    <string name="no_internet">No Internet Connection</string>
 </resources>

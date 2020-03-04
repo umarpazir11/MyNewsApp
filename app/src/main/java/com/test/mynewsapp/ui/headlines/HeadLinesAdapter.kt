@@ -1,19 +1,25 @@
 package com.test.mynewsapp.ui.headlines
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.test.mynewsapp.R
 import com.test.mynewsapp.databinding.ListItemHeadLinesBinding
 import com.test.mynewsapp.ui.data.model.Article
+import com.test.mynewsapp.ui.headlinesdetails.DetailsFragment
 
 /**
  * Adapter for the [RecyclerView] in [HeadLinesFragment].
  */
 class HeadLinesAdapter :
     PagedListAdapter<Article, HeadLinesAdapter.ViewHolder>(DiffCallback()) {
+    private lateinit var navController: NavController
 
     companion object {
         const val NEWS_ARTICLES_SET = 7
@@ -22,7 +28,7 @@ class HeadLinesAdapter :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val newsArticle = getItem(position)
         holder.apply {
-            bind(createOnClickListener(), newsArticle!!)
+            bind(createOnClickListener(newsArticle!!), newsArticle)
             itemView.tag = newsArticle
         }
     }
@@ -36,9 +42,11 @@ class HeadLinesAdapter :
 
     }
 
-    private fun createOnClickListener(): View.OnClickListener {
+    private fun createOnClickListener(article: Article): View.OnClickListener {
         return View.OnClickListener {
-        //TODO("Design UI nad load full article in next Fragment")
+            val bundle = Bundle()
+            bundle.putParcelable("articleTitle", article)
+            it.findNavController().navigate(R.id.action_headLinesFragment_to_detailsFragment,bundle)
         }
     }
 

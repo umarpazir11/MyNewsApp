@@ -1,26 +1,26 @@
 package com.test.mynewsapp.ui.headlines
 
+import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.test.mynewsapp.databinding.ListItemHeadLinesBinding
-import com.test.mynewsapp.ui.data.Article
+import com.test.mynewsapp.ui.data.model.Article
 
 /**
  * Adapter for the [RecyclerView] in [HeadLinesFragment].
  */
 class HeadLinesAdapter :
-    ListAdapter<Article, HeadLinesAdapter.ViewHolder>(DiffCallback()) {
-    companion object {
-        var count: Int = 0
-    }
+    PagedListAdapter<Article, HeadLinesAdapter.ViewHolder>(DiffCallback()) {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val newsArticle = getItem(position)
         holder.apply {
-            bind(newsArticle)
+            bind(createOnClickListener(),newsArticle!!)
             itemView.tag = newsArticle
         }
     }
@@ -33,21 +33,21 @@ class HeadLinesAdapter :
         return ViewHolder(itemView)
 
     }
-//adapter.getItemViewType(position)==7
-//    private fun createOnClickListener(id: Int, name: String): View.OnClickListener {
-//        return View.OnClickListener {
+    private fun createOnClickListener(): View.OnClickListener {
+        return View.OnClickListener {
+            Log.i("clicked","DONE")
 //            val direction = LegoThemeFragmentDirections.actionThemeFragmentToSetsFragment(id, name)
 //            it.findNavController().navigate(direction)
-//        }
-//    }
+        }
+    }
 
     class ViewHolder(
         private val binding: ListItemHeadLinesBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: Article) {
+        fun bind(listener: View.OnClickListener,item: Article) {
             binding.apply {
-                //clickListener = listener
+                clickListener = listener
                 newsArticle = item
                 executePendingBindings()
             }

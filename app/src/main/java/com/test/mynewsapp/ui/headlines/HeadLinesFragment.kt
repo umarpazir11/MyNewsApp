@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.observe
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.test.mynewsapp.api.Result
@@ -25,6 +26,10 @@ class HeadLinesFragment : Fragment(), Injectable {
 
     companion object {
         fun newInstance() = HeadLinesFragment()
+        const val SPAN_COUNT_TWO = 2
+        const val SPAN_COUNT_THREE = 3
+
+
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -35,7 +40,7 @@ class HeadLinesFragment : Fragment(), Injectable {
         val adapter = HeadLinesAdapter()
 
         if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            binding.recyclerView.layoutManager = GridLayoutManager(activity, 2)
+            binding.recyclerView.layoutManager = GridLayoutManager(activity, SPAN_COUNT_TWO)
             (binding.recyclerView.layoutManager as GridLayoutManager).spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
                 override fun getSpanSize(position: Int): Int {
                             return when (adapter.getItemViewType(position)) {
@@ -45,7 +50,7 @@ class HeadLinesFragment : Fragment(), Injectable {
                 }
             }
         } else {
-            binding.recyclerView.layoutManager = GridLayoutManager(activity, 3)
+            binding.recyclerView.layoutManager = GridLayoutManager(activity, SPAN_COUNT_THREE)
             (binding.recyclerView.layoutManager as GridLayoutManager).spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
                 override fun getSpanSize(position: Int): Int {
                     return when (adapter.getItemViewType(position)) {
@@ -63,20 +68,9 @@ class HeadLinesFragment : Fragment(), Injectable {
     }
 
     private fun subscribeUi(binding: HeadlinesFragmentBinding, adapter: HeadLinesAdapter) {
-
-        viewModel.observableHeadLines.observe(viewLifecycleOwner, Observer { result ->
-            when (result.status) {
-                Result.Status.SUCCESS -> {
-                    binding.progressBar.hide()
-                    //result.data?.let { adapter.submitList(it) }
-                    adapter.submitList(result.data?.articles)
-                }
-                Result.Status.LOADING -> binding.progressBar.show()
-                Result.Status.ERROR -> {
-                    binding.progressBar.hide()
-                    Snackbar.make(binding.root, result.message!!, Snackbar.LENGTH_LONG).show()
-                }
-            }
-        })
+        viewModel.legoSets.observe(viewLifecycleOwner) {
+            binding.progressBar.hide()
+            adapter.submitList(it)
+        }
     }
 }

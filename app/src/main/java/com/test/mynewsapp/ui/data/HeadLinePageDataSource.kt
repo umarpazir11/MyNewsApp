@@ -8,9 +8,8 @@ import javax.inject.Inject
 import com.test.mynewsapp.api.Result
 import com.test.mynewsapp.ui.data.model.Article
 
-
 /**
- * Data source for lego sets pagination via paging library
+ * Data source for Head Line News pagination via paging library
  */
 class HeadLinePageDataSource @Inject constructor(
         private val dataSource: HeadLinesRemoteDataSource,
@@ -54,7 +53,6 @@ class HeadLinePageDataSource @Inject constructor(
 
     private fun postError(message: String) {
         //Timber.e("An error happened: $message")
-        // TODO network error handling
         //networkState.postValue(NetworkState.FAILED)
     }
 

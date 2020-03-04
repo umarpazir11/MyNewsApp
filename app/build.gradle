@@ -3,20 +3,19 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
-
 android {
-    compileSdkVersion rootProject.compileSdkVersion
-    buildToolsVersion rootProject.buildToolsVersion
+    compileSdkVersion buildConfig.compileSdk
+    buildToolsVersion buildConfig.buildToolsVersion
     dataBinding {
         enabled = true
     }
 
     defaultConfig {
         applicationId "com.test.mynewsapp"
-        minSdkVersion rootProject.minSdkVersion
-        targetSdkVersion rootProject.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion buildConfig.minSdk
+        targetSdkVersion buildConfig.targetSdk
+        versionCode buildConfig.version.code
+        versionName buildConfig.version.name
         buildConfigField 'String', 'NEWS_API_KEY', "\"208d5d598eff49479f979701bf01226a\""
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -41,68 +40,47 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
-    implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
-    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
-    implementation "androidx.recyclerview:recyclerview:$rootProject.recyclerViewVersion"
-    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycleVersion"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycleVersion"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
-    implementation "androidx.cardview:cardview:1.0.0"
-    implementation "com.google.android.material:material:$rootProject.materialVersion"
+    implementation deps.android.androidx.core
+    implementation deps.android.androidx.constraintLayout
+    implementation deps.android.androidx.recyclerView
+    implementation deps.android.material
+    implementation deps.kotlin.stdlib.jdk
+    implementation deps.okio
+
+    //Lifecyle
+    implementation deps.android.arch.lifecycle
+    //Paging
+    implementation deps.android.arch.paging
+
+    testImplementation deps.android.arch.coretesting
+    androidTestImplementation deps.android.arch.coretesting
 
     //Navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
-    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
+    implementation deps.android.navigation.fragmentktx
+    implementation deps.android.navigation.uiktx
 
-    // Loading Images
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
-    kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
-    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    //Retrofit and Okhttp
+    implementation deps.retrofit.client
+    implementation deps.retrofit.gsonConverter
+    implementation deps.okhttp.okhttp
+    implementation deps.okhttp.loggingInterceptor
 
-    //Paging
-    implementation "androidx.paging:paging-runtime:$rootProject.pagingVersion"
+    //Glide Image Loader lib
+    kapt deps.glide.compiler
+    implementation deps.glide.glide
 
-    // Networking
-    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
-    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofit"
-    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofit"
-    implementation "com.squareup.okhttp3:okhttp:$rootProject.okhttp"
-    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp"
+    //dagger
+    implementation deps.dagger.runtime
+    implementation deps.dagger.android
+    implementation deps.dagger.androidSupport
+    kapt deps.dagger.androidProcessor
+    kapt deps.dagger.compiler
 
-    // Dagger
-    kapt "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
-    kapt "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
-    implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
-    implementation "com.google.dagger:dagger-android:$rootProject.daggerVersion"
-    implementation "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
+    //Unit Tests
+    testImplementation deps.junit
+    testImplementation deps.mockito.core
+    androidTestImplementation deps.mockito.mockitoAndroid
+    testImplementation deps.mockito.inline
+    testImplementation deps.okhttp.mockwebserver
 
-    //Testing dependencies
-    testImplementation "junit:junit:$rootProject.junitVersion"
-    androidTestImplementation "androidx.test.ext:junit:$rootProject.testExtJunit"
-    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espressoVersion"
-
-    testImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
-    androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
-
-    androidTestImplementation "androidx.work:work-testing:$rootProject.workVersion"
-
-    testImplementation "com.squareup.okhttp3:mockwebserver:$rootProject.mockwebserverVersion"
-    testImplementation "org.mockito:mockito-core:$rootProject.mockitoVersion"
-    androidTestImplementation "org.mockito:mockito-core:$rootProject.mockitoVersion"
-    androidTestImplementation "org.mockito:mockito-android:$rootProject.mockitoAndroidVersion"
-
-    testImplementation 'org.mockito:mockito-inline:3.2.4'
-    androidTestImplementation 'androidx.test:rules:1.3.0-alpha04'
-
-
-// we need all open to run tests which  a we enable only for debug builds.
-    project.tasks.whenTaskAdded {
-        if (it.name == "testReleaseUnitTest") {
-            it.enabled = false
-        }
-    }
 }

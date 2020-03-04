@@ -6,7 +6,7 @@ import com.test.mynewsapp.api.NewsService
 import javax.inject.Inject
 
 /**
- * Works with the News API to get data.
+ * Works with the [NewsService] to get data.
  */
 class HeadLinesRemoteDataSource @Inject constructor(private val service: NewsService) : BaseDataSource() {
 

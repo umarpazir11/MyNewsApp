@@ -33,7 +33,6 @@ class HeadLinesFragment : Fragment(), Injectable {
 
     private var connectivityAvailable: Boolean = false
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

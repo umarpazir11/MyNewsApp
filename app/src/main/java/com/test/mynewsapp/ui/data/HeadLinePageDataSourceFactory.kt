@@ -9,7 +9,8 @@ import javax.inject.Inject
 
 class HeadLinePageDataSourceFactory @Inject constructor(
     private val dataSource: HeadLinesRemoteDataSource,
-    private val scope: CoroutineScope) : DataSource.Factory<Int, Article>() {
+    private val scope: CoroutineScope
+) : DataSource.Factory<Int, Article>() {
 
     private val liveData = MutableLiveData<HeadLinePageDataSource>()
 
@@ -23,9 +24,9 @@ class HeadLinePageDataSourceFactory @Inject constructor(
         private const val PAGE_SIZE = 21
 
         fun pagedListConfig() = PagedList.Config.Builder()
-                .setPageSize(PAGE_SIZE)
-                .setEnablePlaceholders(true)
-                .build()
+            .setPageSize(PAGE_SIZE)
+            .setEnablePlaceholders(true)
+            .build()
     }
 
 }

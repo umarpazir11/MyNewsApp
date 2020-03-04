@@ -8,12 +8,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.observe
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.test.mynewsapp.R
 import com.test.mynewsapp.databinding.HeadlinesFragmentBinding
 import com.test.mynewsapp.di.Injectable
 import com.test.mynewsapp.di.factory.injectViewModel
+import com.test.mynewsapp.ui.headlinesdetails.DetailsFragment
 import com.test.mynewsapp.ui.hide
 import com.test.mynewsapp.util.ConnectivityUtil
 import javax.inject.Inject
@@ -76,8 +78,6 @@ class HeadLinesFragment : Fragment(), Injectable {
                 .show()
             binding.progressBar.hide()
         }
-
-        setHasOptionsMenu(true)
         return binding.root
     }
 

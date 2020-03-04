@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@+id/headLinesFragment">
 
 
     <fragment
         android:id="@+id/headLinesFragment"
         android:name="com.test.mynewsapp.ui.headlines.HeadLinesFragment"
-        android:label="HeadLinesFragment" />
+        android:label="HeadLinesFragment"
+        tools:layout="@layout/headlines_fragment">
+        <action
+            android:id="@+id/action_headLinesFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.test.mynewsapp.ui.headlinesdetails.DetailsFragment"
+        android:label="details_fragment"
+        tools:layout="@layout/details_fragment" />
 </navigation>

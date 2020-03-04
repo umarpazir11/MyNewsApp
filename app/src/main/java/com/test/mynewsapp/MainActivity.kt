@@ -2,6 +2,7 @@ package com.test.mynewsapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.ActionBar
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() , HasSupportFragmentInjector {
         val binding: MainActivityBinding = DataBindingUtil.setContentView(this,
             R.layout.main_activity)
         navController = findNavController(R.id.nav_fragment)
+
     }
 
 }

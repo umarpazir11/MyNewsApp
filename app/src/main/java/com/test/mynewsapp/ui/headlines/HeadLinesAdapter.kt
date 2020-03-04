@@ -9,7 +9,7 @@ import com.test.mynewsapp.databinding.ListItemHeadLinesBinding
 import com.test.mynewsapp.ui.data.Article
 
 /**
- * Adapter for the [RecyclerView] in [LegoThemeFragment].
+ * Adapter for the [RecyclerView] in [HeadLinesFragment].
  */
 class HeadLinesAdapter :
     ListAdapter<Article, HeadLinesAdapter.ViewHolder>(DiffCallback()) {

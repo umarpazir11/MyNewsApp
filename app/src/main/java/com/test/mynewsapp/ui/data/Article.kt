@@ -31,7 +31,6 @@ data class Article(
     @RequiresApi(Build.VERSION_CODES.O)
     fun getDuration(){
 //        var date = LocalDateTime.of(publishedAt)
-//
 //        var period = Period.between(publishedAt, LocalDateTime.now())
     }
 }

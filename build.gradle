@@ -76,7 +76,7 @@ buildscript {
                     'androidProcessor': "com.google.dagger:dagger-android-processor:${versions.dagger}",
 
             ],
-            'junit'   : 'junit:junit:4.12',
+            'junit'   : 'junit:junit:4.13.2',
             'okio'    : 'com.squareup.okio:okio:2.4.3',
             'mockito' :[
                  'core'            : 'org.mockito:mockito-core:2.25.0',

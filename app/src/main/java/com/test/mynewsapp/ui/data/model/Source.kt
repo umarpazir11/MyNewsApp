@@ -12,18 +12,16 @@ data class Source(
     val name: String
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
-        parcel.readString().toString(),
-        parcel.readString().toString()
-    ) {
+        parcel.readString() ?: "",
+        parcel.readString() ?: ""
+    )
+
+    override fun writeToParcel(dest: Parcel, flags: Int) {
+        dest.writeString(id)
+        dest.writeString(name)
     }
 
-    override fun writeToParcel(dest: Parcel?, flags: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun describeContents(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+    override fun describeContents(): Int = 0
 
     companion object CREATOR : Parcelable.Creator<Source> {
         override fun createFromParcel(parcel: Parcel): Source {

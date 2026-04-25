@@ -63,11 +63,8 @@ class HeadLinesAdapter :
         }
     }
 
-    /**
-     * This will find out every 1st out of 7 news articles.
-     */
     override fun getItemViewType(position: Int): Int {
-        return position % NEWS_ARTICLES_SET * 2
+        return if (position % NEWS_ARTICLES_SET == 0) 0 else 1
     }
 }
 

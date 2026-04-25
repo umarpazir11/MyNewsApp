@@ -11,6 +11,10 @@ An Android news application that fetches and displays top headlines from [NewsAP
 - Article detail screen with title and full content
 - Internet connectivity check with Snackbar feedback
 - Image loading with fade-in transition via Glide
+  
+<img width="676" height="1418" alt="image" src="https://github.com/user-attachments/assets/58df7840-6508-4c60-b030-c7d0862fb052" />
+
+  
 
 ## Architecture
 
